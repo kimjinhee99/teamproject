@@ -1,0 +1,667 @@
+@charset "utf-8";
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'NEXON Lv2 Gothic', sans-serif;
+  background-color: #fff;
+  font-size: 0.75em;
+  display: block;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  display: block;
+  list-style: none;
+}
+
+#gnb {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 9999;
+}
+
+/* 메인 헤더 로고 */
+#gnb .header_main_logo {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  position: absolute;
+  left: 70px;
+  top: 12px
+}
+
+#gnb .header_main_logo>img {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  width: 100%;
+}
+
+#gnb .header_main_logo a {
+  margin: 0;
+  padding: 0;
+}
+
+/* 메인 헤더 풀드롭 다운 메뉴 */
+#gnb .fulldown_bg .inner {
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  color: #666;
+}
+
+#gnb .fulldown_bg .inner ul:nth-child(1) {
+  margin-right: 85px;
+}
+
+#gnb .fulldown_bg .inner ul {
+  text-align: left;
+}
+
+#gnb .fulldown_bg .inner ul a {
+  line-height: 2;
+  color: #666;
+  margin: 30px 0;
+  padding: 10px 15px;
+}
+
+#hd_wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#hd_wrapper #gnb .fulldown_bg {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: #f8f8f8;
+  top: 70px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+#hd_wrapper #gnb .fulldown_bg {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: #f8f8f8;
+  top: 70px;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: #f8f8f8;
+  top: 70px;
+  display: none;
+}
+
+.dropdown .inner_menu {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.inner_menu>ul {
+  text-align: left;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.inner_menu::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.inner_menu>ul:nth-child(1) {
+  margin-right: 85px;
+}
+
+.inner_menu ul:nth-child(2) {
+  margin-right: 30px;
+}
+
+.inner_menu ul:nth-child(3) {
+  margin-right: 90px;
+}
+
+.inner_menu ul:nth-child(4) {
+  margin-right: 60px;
+}
+
+.dropdown li a {
+  font-size: 15px;
+  color: #666;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.dropdown li a:hover {
+  color: #222;
+}
+
+#gnb:hover .dropdown {
+  display: block;
+}
+
+/* 메인 헤더 메뉴 */
+.gnb_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.6em;
+  width: 100vw;
+  height: 70px;
+}
+
+#gnb .custom_menu {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#gnb>ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-table;
+}
+
+#gnb .custom_menu>li {
+  display: inline-block;
+  margin: 0;
+}
+
+#gnb .custom_menu li a {
+  width: 140px;
+  height: 60px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  /* margin-right: 60px; */
+  color: #222;
+  text-decoration: none;
+  position: relative;
+  font-family: 'NEXON Lv2 Gothic Bold', sans-serif;
+}
+
+#gnb .custom_menu a.menu_ {
+  margin: 0px;
+}
+
+.gnb_wrapper ul li {
+  font-weight: 700;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  margin: 0 20px;
+  color: #000;
+}
+
+/* 메인 버튼 */
+.header_language_select {
+  margin: 0;
+  padding: 2px 0;
+  font-size: 10px;
+  background-color: #222;
+  color: #fff;
+  width: 88px;
+  height: 24px;
+  line-height: 30px;
+  text-align: right;
+  position: absolute;
+  right: 70px;
+  top: 15px;
+
+  border: 0 solid #000;
+  border-radius: 50px 50px 50px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header_language_select a {
+  color: #fff;
+  text-decoration: none;
+  margin: 20px auto;
+  font-size: 11px;
+  padding: 4px 0;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.header_language_select a:nth-child(2) {
+  color: #999;
+}
+
+.header_language_select .current::after {
+  content: "";
+  width: 1px;
+  height: 10px;
+  background: #fff;
+  opacity: 0.3;
+  position: absolute;
+  right: -10px;
+  top: 13px
+}
+
+/* 헤더 소메뉴 보이게 css */
+#hd_wrapper>#gnb>.fulldown_bg {
+  display: none;
+}
+
+/* #gnb .custom_menu:hover, .fulldown_bg ul {
+  display: block;
+} */
+
+.container {
+  font-family: 'NEXON Lv2 Gothic';
+  font-weight: 700;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.container .gnb {
+  width: 62%;
+  height: 19px;
+  margin: 0 auto;
+}
+
+.container .gnb .txt {
+  font-family: 'NEXON Lv2 Gothic light';
+  font-weight: 200;
+  color: #666;
+  text-decoration: none;
+  font-size: 15px;
+  word-spacing: 10px;
+  text-align: right;
+}
+
+.container .gnb .txt img {
+  vertical-align: top;
+}
+
+.container main {
+  width: 70%;
+  margin: 0 auto;
+  font-weight: 700;
+}
+.container main h1 {
+  font-family: 'NEXON Lv2 Gothic Bold';
+  font-size: 66px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin: 0px auto;
+  margin-bottom: 100px;
+}
+.container main section {
+  margin-bottom: 60px;
+}
+.container main section h2 {
+  font-family: 'NEXON_Lv2_Gothic bold';
+  font-weight: 700;
+  font-size: 30px;
+  padding: 25px;
+}
+.container main section p {
+  padding: 25px;
+  font-size: 18px;
+}
+.container main section p em {
+  font-family: 'NEXON Lv2 Gothic bold';
+  font-size: 30px;
+  font-style: normal;
+  padding-left: 10px;
+}
+.container table {
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container main table th {
+  font-family: 'NEXON_Lv2_Gothic medium';
+  font-weight: 600;
+  font-size: 17px;
+  padding: 25px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.container main table td {
+  font-family: 'NEXON Lv2 Gothic';
+  font-weight: 500;
+  font-size: 17px;
+  padding: 15px;
+  padding-left: 5px;
+  padding-right: 20px;
+  line-height: 2;
+
+  border: 1px solid #eaeaea;
+  border-right: none;
+}
+
+.container main table td:first-of-type {
+  border-left: none;
+}
+
+.container main table .num {
+  text-align: right
+}
+
+.container main .top {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.container main .middle .txt {
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.container main .middle .txt h2 {
+
+  margin-bottom: 20px;
+}
+
+.container .button {
+  width: 59px;
+  height: 59px;
+  background-color: #191b1d;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 59px;
+
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+
+  cursor: pointer;
+}
+
+.container .button a {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.container .button:hover {
+  background-color: #007aff;
+}
+
+/* 푸터 */
+footer {
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 400px;
+  /*margin-top: 500px; height: 380px; */
+}
+
+footer .footer_top {
+  width: 62%;
+  height: 45%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.inner_container.col {
+  float: left;
+  width: 50%;
+}
+
+.footer_top .inner_container {
+  width: 95%;
+  max-width: 40%;
+  margin: 0 auto;
+  position: relative;
+}
+
+footer .inner_container .col_left>img {
+  margin: 20px 0;
+}
+
+.inner_container .footer_logo {
+  margin-bottom: 2.5vw;
+  width: 8vw;
+  display: inline-block;
+  margin-bottom: 30px;
+  display: block;
+}
+
+footer .inner_container>img {
+  text-align: left;
+  padding: 0;
+  float: left;
+}
+
+footer .inner_container a {
+  margin: 0;
+  padding: 0;
+}
+
+footer .inner_container {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+footer .inner_container .footer_info_wrap {
+  line-height: 1.8;
+  float: left;
+  clear: both;
+}
+
+.footer_info_wrap .info_txt {
+  font-size: 13px;
+  color: #999;
+  line-height: 1.6em;
+  margin-bottom: 15px;
+  margin: 0;
+}
+
+.footer_info_wrap .info_txt a {
+  margin: 0;
+  padding: 0;
+}
+
+.footer_info_wrap>img {
+  margin: 15px 0;
+}
+
+footer .footer_info_wrap>img a {
+  margin: 0;
+  padding: 0;
+}
+
+.col_right {
+  display: flex;
+  justify-content: right;
+}
+
+.col_right .wrapper {
+  margin-top: 50px;
+  margin-right: 60px;
+  padding: 0;
+  justify-content: left;
+}
+
+.col_right li>a {
+  font-size: 13px;
+  color: #999;
+  line-height: 2em;
+}
+
+.col_right .wrapper h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.col_right .wrapper h3 a {
+  font-size: 15px;
+  font-weight: 400;
+  color: #222;
+}
+
+.col_right .wrapper a:hover {
+  color: #000;
+}
+
+.col_right ul {
+  margin: 0;
+  padding: 0;
+}
+
+.col_right .wrapper_5 {
+  margin-right: 0;
+}
+
+/* 푸터 하단 좌측 카피 */
+#ft_wr {
+  margin-top: 150px;
+  padding: 0;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+#ft_wr>.inner_container {
+  width: 62%;
+  height: 70px;
+  line-height: 70px;
+  position: relative;
+}
+
+.inner_container .copright {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.inner_container .copright p {
+  height: 20px;
+  line-height: 70px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #999;
+}
+
+ /* 푸터 하단 우측 드롭 메뉴 */
+ .footer_family_site {
+  position: absolute;
+  right: 0;
+  float: right;
+}
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+.dropup .dropbtn {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  border: none;
+  width: 220px;
+  text-align: left;
+  background: transparent;
+  position: relative;
+}
+.dropup .dropbtn a {
+color: #999;
+font-size: 14px;
+font-weight: 300;
+}
+.dropup .dropbtn::after{
+  content: "▲";
+  font-size: 9px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.top_btn:hover {
+  background-color: #019fe8;
+  border-color: #3059c7;
+}
+.top_btn {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border-radius: 50px;
+  width: 59px;
+  height: 59px;
+  line-height: 59px;
+  background-color: #191b1d;
+  border: none;
+  text-align: center;
+
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+}
+.top_btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'NEXON Lv2 Gothic bold';
+  font-weight: 700;
+}

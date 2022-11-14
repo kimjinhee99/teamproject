@@ -1,0 +1,719 @@
+@charset "utf-8";
+
+body {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 12px;
+    color: #fff;
+    box-sizing: border-box;
+    background: #191b1d;
+    margin: 0;
+    padding: 0;
+}
+.sudden_header {
+    margin: 0 auto;
+    background: #191b1d;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 199;
+    display: block;
+}
+.sudden_header .main_logo {
+    position: absolute;
+    left: 70px;
+    top: 12px;
+    z-index: 1999;
+    max-width: 100%;
+}
+.header_language_select {
+    background-color: #303234;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    right: 65px;
+    top: 20px;
+    font-size: 11px;
+}
+.header_language_select a {
+    font-size: 11px;
+    color: #fff;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    text-decoration: none;
+}
+.header_language_select a:last-child {
+    margin-right: 0;
+    opacity: 0.3;
+}
+.header_language_select a:last-child:after {
+    content: none;
+}
+.header_language_select a:after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 0.3;
+    position: absolute;
+    right: -10px;
+    top: 0;
+}
+.header_language_select a:hover {
+    opacity: 0.8;
+}
+.menu {
+    height: 70px;
+    margin: 0 auto;
+    max-width: 1280px;
+    position: relative;
+}
+.sudden_header .menu ul {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    list-style: none;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.sudden_header .menu ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+}
+.sudden_header .menu ul li:nth-child(1) {
+    margin: 0;
+}
+.sudden_header .menu ul li a {
+    color: #fff;
+    font-size: 21px;
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    position: relative;
+    font-family: 'NEXON Lv2 Gothic bold';
+    font-weight: 700;
+    text-align: center;
+}
+.dropdown {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color:  #f8f8f8;
+    top: 70px;
+    display: none;
+}
+.dropdown .inner_menu {
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.inner_menu ul {
+    text-align: left;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.inner_menu::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.inner_menu ul:nth-child(1) {
+    margin-right: 85px;
+}
+.inner_menu ul:nth-child(2) {
+    margin-right: 30px;
+}
+.inner_menu ul:nth-child(3) {
+    margin-right: 90px;
+}
+.inner_menu ul:nth-child(4) {
+    margin-right: 60px;
+}
+.dropdown li a {
+    font-size: 15px;
+    color: #666;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 35px;
+    cursor: pointer;
+}
+.dropdown li a:hover {
+    color: #222;
+}
+.sudden_header:hover .dropdown {
+    display: block;
+}
+.sub_main_content {
+    padding: 0 30px;
+    width: 100%;
+    max-width: 1640px;
+    margin: 70px auto 0;
+    display: block;
+    overflow: hidden;
+}
+.sub_content_banner {
+    background-image: url(./images/서든어택/sudden_attack_b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 130px 0;
+}
+.txt_box1 {
+    width: 95%;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+.txt_box1 h1 {
+    font-size: 70px;
+    font-family: 'NEXON Lv2 Gothic bold';
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.txt_box1 h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    margin-bottom: 10.8375vw;
+    font-weight: normal;
+}
+.txt_box1 p {
+    opacity: 0.4;
+    font-family: 'NEXON Lv2 Gothic bold';
+    font-weight: 700;
+    font-size: 18px;
+}
+.txt_box1 p span:nth-child(1) {
+    padding-right: 30px;
+    display: inline-block;
+}
+.txt_box1 p span:nth-child(2) {
+    padding-left: 30px;
+    border-left: 1px solid #fff;
+}
+.sudden_box1 {
+    font-size: 30px;
+    margin: 200px 0;
+    position: relative;
+}
+.contents1 {
+    width: 95%;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    text-align: right;
+}
+.contents1 img {
+    max-width: 100%;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+.contents1 p {
+    font-size: 50px;
+    line-height: 1.5;
+    font-family: 'NEXON Lv2 Gothic bold';
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 40%;
+    text-align: left;
+    text-transform: uppercase;
+}
+.sudden_box2 {
+    margin: 200px 0;
+    position: relative;
+}
+.contents2 {
+    width: 100%;
+    padding: 0 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+.contents2 img {
+    max-width: 100%;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+.contents2_txt {
+    position: absolute;
+    top: 30%;
+    right: 0;
+}
+.contents2_txt h3 {
+    font-size: 50px;
+    line-height: 1.5;
+    font-family: 'NEXON Lv2 Gothic bold';
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 45px;
+}
+.contents2_txt p {
+    font-size: 26px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-family: 'NEXON Lv2 Gothic light';
+}
+.sudden_box3 {
+    width: 95%;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+.contents3 {
+    padding: 0 290px;
+    position: relative;
+}
+.contents3 .left_img {
+    position: absolute;
+    left: -40px;
+}
+.contents3 .right_img {
+    position: absolute;
+    right: -100px;
+    top: 0;
+}
+.contents3 .contents3_txt {
+    display: block;
+    text-align: center;
+}
+.contents3_txt h2 {
+    font-size: 44px;
+    margin-bottom: 35px;
+    font-family: 'NEXON Lv2 Gothic bold';
+    font-weight: 700;
+    text-align: left;
+}
+.contents3_txt p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-family: 'NEXON Lv2 Gothic light';
+    font-weight: 300;
+    text-align: left;
+}
+.contents3 .center_img {
+    margin: 100px 0;
+    vertical-align: middle;
+}
+.trailer_video {
+    height: 40vw;
+}
+.video_container {
+    width: 95%;
+    max-width: 1280px;
+    margin: 100px auto;
+    position: relative;
+}
+.video_container_inner {
+    width: 48.9583333333vw;
+    margin: 0 auto;
+}
+.iframe_wrap {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+iframe {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.bottom_slider {
+    position: relative;
+    margin-bottom: 11.19791666666667vw;
+}
+.swiper-wrapper {
+    transition-duration: 0ms;
+    transform: translate3d(565px, 0px, 0px);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+    transition-property: transform;
+}
+.slide-swiper img {
+    width: 100%;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+    opacity: 0.5;
+}
+.img01 {
+    width: 326px;
+    margin-right: 50px;
+    z-index: 2;
+    opacity: 1;
+}
+.img01 img {
+    width: 100%;
+    margin-right: 50px;
+    opacity: 1;
+    transform: scale(2) !important;
+}
+.swiper_next {
+    background: url(./images/서든어택/b_next.png) no-repeat center;
+    width: 57px;
+    height: 57px;
+    left: 630px;
+}
+.swiper_prev {
+    background: url(./images/서든어택/b_prev.png) no-repeat center;
+    width: 57px;
+    height: 57px;
+    left: -250px;
+    opacity: 0.5;
+}
+.swiper-button {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom_download_site {
+    width: 100%;
+    padding: 0 20px;
+    padding-bottom: 115px;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+.bottom_download_site .site {
+    width: 65.234375%;
+    float: left;
+}
+.bottom_download_site:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.bottom_download_site .site h3 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+.bottom_download_site .site ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.bottom_download_site .site ul li {
+    width: 25%;
+    float: left;
+}
+.bottom_download_site .site ul li img {
+    max-width: 100%;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+.sudden_footer {
+    background: #f3f3f3;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: #000;
+    display: block;
+}
+.footer-top {
+    padding: 50px 0;
+}
+.footer-contents {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+.footer-contents aside, .bottom_bng {
+    float: left;
+    width: 50%;
+}
+.footer_logo {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.footer_txt_box1, .footer_txt_box2  {
+    font-size: 13px;
+    color: #999;
+    line-height: 1.6em;
+    margin-bottom: 15px;
+    font-family: 'NEXON Lv2 Gothic light';
+    font-weight: 300;
+}
+.bottom_bng {
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.bottom_bng ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.bottom_bng>ul>li:nth-child(1) {
+    margin-right: 45px;
+}
+.bottom_bng>ul>li:nth-child(2) {
+    margin-right: 45px;
+}
+.bottom_bng>ul>li:nth-child(3) {
+    margin-right: 45px;
+}
+.bottom_bng>ul>li:nth-child(4) {
+    margin-right: 45px;
+    padding: 0;
+}
+.bottom_bng>ul>li {
+    float: left;
+}
+.bottom_bng>ul>li>a {
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #222;
+    text-decoration: none;
+}
+.bottom_bng ul li ul li {
+    margin-bottom: 10px;
+}
+.bottom_bng ul li ul li a {
+    font-size: 14px;
+    color: #999;
+    display: inline-block;
+    text-decoration: none;
+}
+.bottom_bng ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.footer-contents:after {
+    content: "";
+    clear: both;
+    display: block;
+    box-sizing: border-box;
+}
+/* 푸터 */
+footer {
+    background-color: #f3f3f3;
+    width: 100%; height: 400px;
+    /*margin-top: 500px; height: 380px; */
+  }
+  footer .footer_top {
+    width: 62%; height: 45%;
+    margin: 0 auto;
+  }
+  .inner_container.col {
+    float: left;
+    width: 50%;
+  }
+  .footer_top .inner_container {
+    width: 95%;
+    max-width: 40%;
+    margin: 0 auto;
+    position: relative;
+  }
+  footer .inner_container .col_left img {
+    margin: 20px 0;
+  }
+  .inner_container .footer_logo {
+    margin-bottom: 2.5vw;
+    width: 8vw;
+    display: inline-block;
+    margin-bottom: 30px;
+    display: block;
+  }
+  footer .inner_container img {
+    text-align: left;
+    padding: 0;
+    float: left;
+  }
+  footer .inner_container a {
+    margin: 0;
+    padding: 0;
+  }
+  footer .inner_container {
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+  footer .inner_container .footer_info_wrap {
+    line-height: 1.8;
+    float: left;
+    clear: both;
+  }
+  .footer_info_wrap .info_txt {
+    font-size: 13px;
+    color: #999;
+    line-height: 1.6em;
+    margin-bottom: 15px;
+    margin: 0;
+  }
+  .footer_info_wrap .info_txt a {
+    margin: 0; padding: 0;
+  }
+  .footer_info_wrap>img {
+    margin: 15px 0;
+  }
+  footer .footer_info_wrap>img a {
+    margin: 0;
+    padding: 0;
+  }
+  .col_right { display: flex; justify-content: right; }
+      .col_right .wrapper { margin-top: 50px; margin-right: 60px; padding: 0; justify-content: left;}
+      .col_right  li>a { font-size: 13px;
+          color: #999;
+          line-height: 2em;}
+      .col_right .wrapper h3 { margin: 0; margin-bottom: 15px; padding: 0;}
+      .col_right .wrapper h3 a { font-size: 15px; font-weight: 400; color: #222;}
+      .col_right .wrapper a:hover { color: #000;}
+      .col_right ul { margin: 0; padding: 0;}
+      .col_right .wrapper_5 {margin-right: 0;}
+  
+      /* 푸터 하단 좌측 카피 */
+      #ft_wr {
+        padding: 0;
+        border-top: 1px solid #ddd;
+        width: 100%; height: 70px;
+        display: flex; justify-content: center;
+    }
+    #ft_wr > .inner_container {
+        width: 62%; height: 70px;
+        line-height: 70px;
+        position: relative;
+    }
+    .inner_container .copright {
+        margin: 0; padding: 0;
+        float: left;
+    }
+    .inner_container .copright p {
+        height: 20px; line-height: 70px;
+        margin: 0; padding: 0;
+        font-size: 14px;
+        color: #999;
+    }
+    /* 푸터 하단 우측 드롭 메뉴 */
+    .footer_family_site {
+      position: absolute;
+      right: 0;
+      float: right;
+  }
+  .dropup {
+      position: relative;
+      display: inline-block;
+  }
+  .dropup .dropbtn {
+      font-size: 12px;
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      border: none;
+      width: 220px;
+      text-align: left;
+      background: transparent;
+      position: relative;
+  }
+  .dropup .dropbtn a {
+    color: #999;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .dropup .dropbtn::after{
+      content: "▲";
+      font-size: 9px;
+      position: absolute;
+      right: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #999;
+  }
+  
+   /* 푸터 하단 버튼 */
+   button {
+    display: inline-block;
+  }
+  button>a {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  #top_btn {
+    position: fixed;
+    border-radius: 50px;
+    width: 59px;
+    height: 59px;
+    background: #191b1d;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    bottom: 100px;
+    right: 30px;
+  }
+  .sound_only {
+    display: inline-block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0;
+    line-height: 0;
+    border: 0 !important;
+    overflow: hidden !important;
+  }
+  .top_btn:hover {
+    background-color: #019fe8;
+    border-color: #3059c7;
+  }
+  .top_btn {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border-radius: 50px;
+    width: 59px;
+    height: 59px;
+    background-color: #191b1d;
+    border: none;
+    text-align: center;
+  
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+  }
+  .top_btn>a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 59px;
+    font-size: 15px;
+    font-family: 'NEXON Lv2 Gothic bold';
+    font-weight: 700;
+  }
